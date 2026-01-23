@@ -1,0 +1,71 @@
+/* module-2 lesson */
+
+h1 {
+  color: rgb(0, 128, 0); /* Dark Green using RGB */
+}
+
+p {
+  color: #FF5733; /* Bright Orange using HEX */
+}
+
+.vivid {
+  color: hsl(210, 100%, 50%); /* Vivid Blue using HSL */
+}
+
+a {
+  color: pink; /* Pink color using named color */
+}
+
+.box {
+  border-style: solid;
+  border-color: lightblue;
+}
+
+/* .header {
+  background-image: url("https://edube.org/uploads/media/default/0001/03/sunflowers_sunset_full.jpg");
+  height: 500px;
+  text-align: center;
+  color: white;
+} */
+
+.header {
+    background-image: url("https://edube.org/uploads/media/default/0001/03/sunflowers_sunset_full.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+  }
+
+.header2 {
+  background-image: linear-gradient(to bottom, #ff9900, #ffcc00);
+  height: 500px;
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+}
+
+ul {
+  /* list-style-type: square; Changes bullets to squares */
+  list-style-image: url('https://edube.org/uploads/media/default/0001/04/oedg_icon_regular.png');
+}
+
+a:link {
+  text-decoration: none; /* Remove underline */
+  color: pink;
+}
+a:hover {
+  background-color: black;
+  color: white;
+}
+  
+a:active {
+  font-weight: bold; /* Add bold font on click */
+  color: black; /* Change color on click to black */
+}
+
+img {
+    border-radius: 50%;
+}

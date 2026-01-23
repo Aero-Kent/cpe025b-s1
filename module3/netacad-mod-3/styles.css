@@ -1,0 +1,133 @@
+.box {
+    width: 200px;
+    height: 100px;
+    min-width: 100px;
+    max-width: 300px;
+    min-height: 50px;
+    max-height: 200px;
+  }
+
+.rounded-box {
+    background-color: lightblue;
+    background-image: url('https://edube.org/uploads/media/default/0001/04/red-flower.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px; /* Adding rounded corners */
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+  }
+
+.background-size-box {
+    background-color: #add8e6;
+    background-image: url('https://edube.org/uploads/media/default/0001/04/flowers-banner.png');
+    background-size: cover; /* Ensuring the background covers the entire element */
+    background-clip: border-box; /* Defines how far the background extends */
+    padding: 30px;
+    border: 5px solid black;
+    margin: 20px;
+  }
+
+.hidden {
+    display: none;
+}
+
+.hidden-element {
+    visibility: hidden;
+}
+
+.sticky-nav {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0; /* Set to stick at the top of the viewport */
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+.content {
+  padding: 20px;
+}
+
+.basic-table {
+    width: 100%;
+    border-collapse: collapse; /* Eliminates the space between borders */
+}
+
+.basic-table th, .basic-table td {
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 8px; /* Padding for cell content */
+    text-align: left; /* Aligns text to the left */
+}
+
+.basic-table th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+    color: #333; /* Dark text color for contrast */
+}
+
+.custom-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.custom-form label {
+    margin-top: 10px;
+    display: block;
+    color: #333;
+}
+
+.custom-form input[type="text"],
+.custom-form input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button-spacer {
+    height: 20px; /* Adjust the height as needed for appropriate spacing */
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+fieldset {
+    width: 350px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    background-color: #efefef;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+fieldset input {
+    margin-bottom: 10px;
+}
+
+
