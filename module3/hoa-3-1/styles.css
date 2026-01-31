@@ -1,0 +1,64 @@
+/* changed most of the paddings here to be relative instead of absolute values */
+/* additionally changed the color palette of the webpage */
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background-color: #F2E9DC;
+}
+
+header {
+  background-color: #C0652A;
+  padding: 1%;
+  text-align: center;
+}
+
+section {
+  margin: 20px;
+  
+}
+
+footer {
+  background-color: #C0652A;
+  padding: 0.15%;
+  text-align: center;
+}
+
+h2 img{
+  color: black;
+  font-size: 32px;
+}
+
+.highlight {
+  background-color: orange;
+  color: white;
+  padding: 4px;
+}
+
+#header {
+  border-bottom: 5px solid orange;
+}
+
+a[href^="mailto:"] {
+  color: orange;
+}
+
+a:hover {
+  color: white;
+}
+
+header + main {
+  border-top: 5px solid gray;
+}
+
+h1 { 
+  color: blue !important;
+}
+
+p {
+  color: green;
+}
+
+#header h1 {
+  color: orange !important;
+}

@@ -1,0 +1,128 @@
+/* just changed the color palette in an attempt to match a pancit canton color scheme
+as well as changed some alignments and text styles, specifically added some div
+in order to make the products align horizantal instead as well as made it so that 
+it does not block the header. */
+
+body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    background-color: beige;
+}
+
+header {
+    background-color: #E6B65B;
+    padding: 0%;
+    background-size: cover;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 15px solid #7AA65C;
+}
+
+footer {
+    background-color: #E6B65B;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.product-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #000;
+    margin: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.badge {
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.product-specs {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-specs th, .product-specs td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.product-specs tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.product-specs tr:hover {
+    background-color: #ddd;
+}
+
+/* Form styles */
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.contact-form form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form fieldset {
+    border: none;
+}
+
+.contact-form legend {
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
