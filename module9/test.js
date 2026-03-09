@@ -12,11 +12,31 @@ class WeatherDashboard {
   }
 
   async syncData(fetchFunction) {
-  // Code here!
+    // Code here!
+    const promises = Array.from(this.#cities).map(async (city) => {
+        try {
+          const data = await fetchFunction(city);
+          this.#weatherData.set(city, data.weather);
+        } catch (error) {
+          console.error(`Failed to sync ${city}: ${error.message}`);
+        }
+      });
+
+    await Promise.all(promises);
   }
 
   getHottestCity() {
-  // Code here!
+    // Code here!
+    let hottest = null;
+    let maxTemp = -Infinity;
+
+    for (let [city, data] of this.#weatherData) {
+      if (data.temp > maxTemp) {
+        maxTemp = data.temp;
+        hottest = city;
+      }
+    }
+    return hottest;
   }
 }
 
